@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 130px;
+    display: flex;
+    justify-content: space-between;
+    height: 92px;
+    align-items: center;
+}
+
+.navbar h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+}
+
+.navbarList {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: DM Sans, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #262626;
+}
