@@ -8,10 +8,10 @@
     align-items: center;
 }
 
-.navbar h3 {
-    font-size: 24px;
+.logo {
+    font-size: 32px;
     font-weight: 600;
-    font-family: Arial, sans-serif;
+    font-family: "Darkline", sans-serif;
 }
 
 .navbarList {
@@ -22,4 +22,20 @@
     font-size: 15px;
     font-weight: 400;
     color: #262626;
+}
+
+.navbarListItem {
+    cursor: pointer;
+}
+
+.link {
+    color: #262626;
+    opacity: 60%;
+    text-decoration: none;
+}
+
+.active {
+    color: #262626;
+    font-weight: 700;
+    text-decoration: none;
 }
