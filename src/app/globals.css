@@ -36,3 +36,8 @@ a {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+@font-face {
+  font-family: "Darkline";
+  src: url("/public/fonts/Darkline.ttf") format("truetype");
+}
