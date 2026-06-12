@@ -8,11 +8,11 @@ export default function Home() {
     <div>
       <main>
         <div>
-            <Hero />
-            <LeagueList />
-            <NewsList />
-            <UpcomingMatches />
-            Team Details
+          <Hero />
+          <LeagueList />
+          <NewsList />
+          <UpcomingMatches />
+          Team Details
         </div>
       </main>
     </div>

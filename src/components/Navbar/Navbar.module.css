@@ -1,41 +1,48 @@
 .navbar {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 20px 130px;
-    display: flex;
-    justify-content: space-between;
-    height: 92px;
-    align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 130px;
+  display: flex;
+  justify-content: space-between;
+  height: 92px;
+  align-items: center;
 }
 
 .logo {
-    font-size: 32px;
-    font-weight: 600;
-    font-family: "Darkline", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Darkline", sans-serif;
 }
 
 .navbarList {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    font-family: DM Sans, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: #262626;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-family:
+    DM Sans,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #262626;
 }
 
 .navbarListItem {
-    cursor: pointer;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .link {
-    color: #262626;
-    opacity: 60%;
-    text-decoration: none;
+  color: #262626;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.link:hover {
+  opacity: 1;
 }
 
 .active {
-    color: #262626;
-    font-weight: 700;
-    text-decoration: none;
+  opacity: 1;
+  color: #262626;
+  font-weight: 700;
 }
