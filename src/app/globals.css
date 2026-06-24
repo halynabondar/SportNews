@@ -38,6 +38,17 @@ a {
 }
 
 @font-face {
+  font-family: "Sequel Sans Black Disp";
+  src: url("/fonts/sequel-sans-black-display.ttf") format("truetype");
+  font-weight: 435;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Darkline";
-  src: url("/public/fonts/Darkline.ttf") format("truetype");
+  src: url("/fonts/Darkline.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
