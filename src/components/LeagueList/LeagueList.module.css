@@ -1,3 +1,135 @@
-.leagueList {
-  margin-top: 50px;
+.categorySection {
+    margin-top: 50px;
+}
+
+.category {
+    margin-bottom: 16px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap: 24px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.titleCard {
+    height: 116px;
+    background: #ebeef3;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleCard h3 {
+    margin: 0;
+    font-family: "Sequel Sans Black Disp", sans-serif;
+    font-size: 37px;
+    line-height: 0.9;
+    text-align: center;
+    text-transform: uppercase;
+
+    background: linear-gradient(180deg, #262626 0%, #b8c2ce 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.imageCard {
+    position: relative;
+    height: 288px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.imageCard img {
+    object-fit: cover;
+}
+
+@media (min-width: 1201px) {
+    .grid {
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(3, 116px);
+        gap: 24px;
+    }
+
+    .item:nth-child(2) .titleCard,
+    .item:nth-child(4) .titleCard {
+        transform: translateY(30px);
+    }
+
+    .item {
+        display: contents;
+    }
+
+    .item:nth-child(1) .titleCard {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .item:nth-child(1) .imageCard {
+        grid-column: 1;
+        grid-row: 2 / span 2;
+    }
+
+    .item:nth-child(2) .imageCard {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .item:nth-child(2) .titleCard {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .item:nth-child(3) .titleCard {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .item:nth-child(3) .imageCard {
+        grid-column: 3;
+        grid-row: 2 / span 2;
+    }
+
+    .item:nth-child(4) .imageCard {
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+
+    .item:nth-child(4) .titleCard {
+        grid-column: 4;
+        grid-row: 3;
+    }
+}
+
+@media (min-width: 1201px) {
+    .imageCard {
+        height: 288px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(2, 270px);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .imageCard {
+        height: 240px;
+    }
 }
